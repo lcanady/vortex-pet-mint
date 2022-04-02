@@ -34,13 +34,18 @@ const Button = styled.button`
   border-radius: 50px;
 `;
 
+const Subtitle = styled.p`
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 24px 0;
+`;
+
 function App() {
   return (
     <Wrapper>
       <Overlay>
         <img src={logo} alt="logo" />
-        <Title>Vortex Pets Pass</Title>
-        <Button>Mint</Button>
+        <Title>Vortex Pets</Title>
       </Overlay>
     </Wrapper>
   );
