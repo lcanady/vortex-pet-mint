@@ -46,6 +46,13 @@ function App() {
       <Overlay>
         <img src={logo} alt="logo" />
         <Title>Vortex Pets</Title>
+        <Button
+          onClick={() =>
+            window.open("https://opensea.io/collection/vortexpets", "_blank")
+          }
+        >
+          Available on OpenSea
+        </Button>
       </Overlay>
     </Wrapper>
   );
