@@ -41,6 +41,7 @@ const Button = styled.button`
   min-width: 300px;
   font-size: 1.3em;
   border-radius: 50px;
+  background-color: white;
 `;
 
 const Subtitle = styled.p`
