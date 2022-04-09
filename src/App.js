@@ -29,6 +29,10 @@ const Title = styled.h1`
   margin-top: 24px;
   font-size: 48px;
   color: white;
+
+  @media screen and (max-width: 980px) {
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`
@@ -48,10 +52,17 @@ const Subtitle = styled.p`
 
 const Section = styled.div`
   width: 100%;
-  height: 50vh;
+  padding: 24px 0;
+  min-height: 50vh;
   display: flex;
   background-color: ${({ color }) => color};
   color: ${({ text }) => text};
+
+  @media only screen and (max-width: 960px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Roadmap = styled.div`
@@ -74,6 +85,12 @@ const Right = styled.div`
     li {
       margin: 8px 0;
       font-weight: bolder;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    ul {
+      margin-left: 0px;
     }
   }
 `;
@@ -105,7 +122,7 @@ function App() {
         <Roadmap>
           <Section ref={firstRef} color="rgba(254,254,135,.8)">
             <Left>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" style={{ margin: "24px 0" }} />
             </Left>
             <Right>
               <SectionTitle>SET 0 - START UP</SectionTitle>
@@ -130,7 +147,7 @@ function App() {
           </Section>
           <Section color="rgba(0,250,207,.8)">
             <Left>
-              <img src={pet1} alt="logo" />
+              <img src={pet1} alt="logo" style={{ margin: "24px 0" }} />
             </Left>
             <Right>
               <SectionTitle>SET 1</SectionTitle>
@@ -153,7 +170,7 @@ function App() {
           </Section>
           <Section color="rgba(238,119,118,.8)">
             <Left>
-              <img src={pet2} alt="logo" />
+              <img src={pet2} alt="logo" style={{ margin: "24px 0" }} />
             </Left>
             <Right>
               <SectionTitle>SET 2</SectionTitle>
@@ -177,7 +194,7 @@ function App() {
           </Section>
           <Section color="rgba(0,0,0,.8)">
             <Left>
-              <img src={pet3} alt="logo" />
+              <img src={pet3} alt="logo" style={{ margin: "24px 0" }} />
             </Left>
             <Right>
               <SectionTitle style={{ position: "relative", color: "white" }}>
